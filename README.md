@@ -109,7 +109,7 @@ Prior to sampling, the distribution of each attribute scans across the three dat
 *  Speed                          [Hz]
 
 ## UX
-User experience was a top priority when creating the benchmark. This included making sure the product was inclusive and adaptable to people's needs, that all instructions were clear, simple and intuitive, and that the outputs were aesthetically engaging. To address the user experience, the following features were added to improve usability:
+User experience was a top priority when creating the benchmark. This included making sure the product was inclusive and adaptable to people's needs, that all instructions were clear, simple and intuitive, and that the outputs were aesthetically engaging. To address the user experience, the following features were added to improve useability:
 *  +/- to adjust the datapoint size.
 *  n/b to quickly navigate the scans.
 *  Loading bar and tasks complete indicator.
