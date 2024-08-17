@@ -20,7 +20,7 @@
 3. [Prerequisite Packages](#Prerequisite-Packages)
 4. [How to Run](#How-to-Run)
 5. [Evaluation](#Evaluation)
-6. [User Experience](#User-Experience)
+6. [User Experience](#UX)
 7. [References](#References)
 
 ## Aims & Objectives
@@ -31,7 +31,7 @@ The aim of this benchmark was to create a ground segmentation evaluation tool wh
 * To generate a performance score for urban and rural scenarios and sensor type and position, as well as provide an overall score.
 * To create a leaderboard to compare algorithm results against.
 
-### User Experience
+### User Experience (UX)
 * To provide an intuitive algorithm integration experience with clear instructions.
 * To create an inclusive environment for users with different needs.
 * To create a visually pleasing user interface, which is easy to navigate and understand.
@@ -84,7 +84,7 @@ cd /path/to/your/LiDAR-CS
 python3 evaluate_template.py
 ```
 ## Evaluation
-The ground segmentation evaluation can be viewed through two mediums: visually or numerically. For instances where the algorithm performance falls below the adjustable IoU threshold of 70%, users can visualise the pointcloud as demonstrated below. This allows developers to identify areas for improvement in their algorithm approach, highlighting points of over and under-segmentation.
+The ground segmentation evaluation can be viewed through two mediums: visually or numerically. For instances where the algorithm performance falls below the adjustable IoU threshold of 70%, users can visualise the point cloud as demonstrated below. This allows developers to identify areas for improvement in their algorithm approach, highlighting points of over and under-segmentation.
 
 ### Visualise
 The terminal output and visualised point cloud of the LineFit algorithm can be seen below. The colours provide a clear contrast in under and over-segmented areas, as well as highlighting where the algorithm successfully identified the ground plane. 
@@ -108,7 +108,7 @@ Prior to sampling, the distribution of each attribute scans across the three dat
 *  Memory Usage                   [%]
 *  Speed                          [Hz]
 
-## User Experience
+## UX
 User experience was a top priority when creating the benchmark. This included making sure the product was inclusive and adaptable to people's needs, that all instructions were clear, simple and intuitive, and that the outputs were aesthetically pleasing. To address the user experience, the following features were added to improve usability:
 *  +/- to adjust the datapoint size.
 *  n/b to quickly navigate the scans.
@@ -121,7 +121,7 @@ The final feature added to the benchmark was the option to alter the colour pale
 <p align="center"><img src=images/colour-palettes.png alt="Colourblind Colour Palette" width="950px" /></p>
 
 ## References
-I would like ot thank the following for making their work open source, and wish to continue this trend so that others can gain insight into current ground segmentation approaches.
+I would like to thank the following for making their work open source, and I wish to continue this trend so that others can gain insight into current ground segmentation approaches.
 ```
 @inproceedings{himmelsbach2010fast,
   title={Fast segmentation of 3d point clouds for ground vehicles},
