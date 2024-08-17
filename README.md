@@ -187,6 +187,6 @@ I would like ot thank the following for making their work open source, and wish 
 
 ## Future Work
 *  To label the ground plane for all LiDAR-CS dataset scans.
-*  To populate the leaderboard with a veriety of algorithm approaches.
+*  To populate the leaderboard with a variety of algorithm approaches.
 *  To add additional spoken languages.
 *  To add additional programming languages.
