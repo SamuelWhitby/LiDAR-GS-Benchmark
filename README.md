@@ -16,12 +16,12 @@
 
 ## Contents
 0. [Aims & Objectives](#Aims-&-Objectives)
-2. [Description](#Description)
+2. [What's Inside](#What's-Inside)
 3. [Prerequisite Packages](#Prerequisite-Packages)
-4. [Requirements](#Requirements)
-5. [Preparing DataSet](#Preparing-DataSet)
-6. [Getting Started](#Getting-Started)
-7. [Python visualization / Provided result files](#If-you-are-not-familiar-with-ROS/C++...)
+4. [How to Run](#How-to-Run)
+5. [Evaluation](#Evaluation)
+6. [User Experience](#User-Experience)
+7. [References](#References)
 
 ## Aims & Objectives
 The aim of this benchmark was to create a ground segmentation evaluation tool which reflects the desires of the industry and its stakeholders. Utilising this package, developers can build algorithms which are robust to a diverse range of scenearios and sensors, ensuring that they are future-proof, safe and non-discriminatory. The objectives were:
@@ -84,7 +84,7 @@ cd /path/to/your/LiDAR-CS
 python3 evaluate_template.py
 ```
 ## Evaluation
-The ground segmentation evaluation can be viewed through two mediums: visually or numerically. For instances where the algorithm performance falls below the adjustable IoU threshold of 70%, users can visualise the pointcloud as demonstrated below. This allows developers to identify areas for improvement in their algorithm approach, highlighting points of over and under-segmentation.
+The ground segmentation evaluation can be viewed through two mediums: visually or numerically. For instances where the algorithm performance falls below the adjustable IoU threshold of 70%, users can visualise the point cloud as demonstrated below. This allows developers to identify areas for improvement in their algorithm approach, highlighting points of over and under-segmentation.
 
 ### Visualise
 The terminal output and visualised point cloud of the LineFit algorithm can be seen below. The colours provide a clear contrast in under and over-segmented areas, as well as highlighting where the algorithm successfully identified the ground plane. 
@@ -121,7 +121,7 @@ The final feature added to the benchmark was the option to alter the colour pale
 <p align="center"><img src=images/colour-palettes.png alt="Colourblind Colour Palette" width="950px" /></p>
 
 ## References
-I would like ot thank the following for making their work open source, and wish to continue this trend so that others can gain insight into current ground segmentation approaches.
+I would like to thank the following for making their work open source, and I wish to continue this trend so that others can gain insight into current ground segmentation approaches.
 ```
 @inproceedings{himmelsbach2010fast,
   title={Fast segmentation of 3d point clouds for ground vehicles},
