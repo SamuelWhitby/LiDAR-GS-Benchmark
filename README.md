@@ -20,7 +20,7 @@
 3. [Prerequisite Packages](#Prerequisite-Packages)
 4. [How to Run](#How-to-Run)
 5. [Evaluation](#Evaluation)
-6. [User Experience](#User-Experience)
+6. [User Experience](#UX)
 7. [References](#References)
 
 ## Aims & Objectives
@@ -31,7 +31,7 @@ The aim of this benchmark was to create a ground segmentation evaluation tool wh
 * To generate a performance score for urban and rural scenarios and sensor type and position, as well as provide an overall score.
 * To create a leaderboard to compare algorithm results against.
 
-### User Experience
+### User Experience (UX)
 * To provide an intuitive algorithm integration experience with clear instructions.
 * To create an inclusive environment for users with different needs.
 * To create a visually pleasing user interface, which is easy to navigate and understand.
@@ -108,7 +108,7 @@ Prior to sampling, the distribution of each attribute scans across the three dat
 *  Memory Usage                   [%]
 *  Speed                          [Hz]
 
-## User Experience
+## UX
 User experience was a top priority when creating the benchmark. This included making sure the product was inclusive and adaptable to people's needs, that all instructions were clear, simple and intuitive, and that the outputs were aesthetically pleasing. To address the user experience, the following features were added to improve usability:
 *  +/- to adjust the datapoint size.
 *  n/b to quickly navigate the scans.
