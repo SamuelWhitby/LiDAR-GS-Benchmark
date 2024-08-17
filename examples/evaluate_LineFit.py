@@ -114,7 +114,7 @@ all_results = []
 low_accuracy_folders = []
 
 # Count total number of folders for the loading bar
-environment_path = os.path.join(base_dir, 'scene_attributes/urban/')  # LineFit requires heights to be set manually
+environment_path = os.path.join(base_dir, 'scenarios/urban/')  # LineFit requires heights to be set manually
 
 total_tasks = 0
 
