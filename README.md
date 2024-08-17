@@ -8,7 +8,7 @@
   <br />   
   <p align="center"><img src=images/ground-labelling.png alt="Ground Segmentation" width="950px"></p>
   
-  Welcome to the **LiDAR** **G**round **S**egmentastion (**LiDAR-GS**) Benchmark, an industry derived evaluation tool to holistically assess the performance of ground segmentation algorithms across a wide range of scenarios and sensors. 
+  Welcome to the **LiDAR** **G**round **S**egmentation (**LiDAR-GS**) Benchmark, an industry-derived evaluation tool to holistically assess the performance of ground segmentation algorithms across a wide range of scenarios and sensors. 
 </div>
 
 ## Updates
@@ -24,27 +24,27 @@
 7. [Python visualization / Provided result files](#If-you-are-not-familiar-with-ROS/C++...)
 
 ## Aims & Objectives
-The aim of this benchmark was to create a ground segmentation evaluation tool which relfects the desires of industry and their stakeholders. Utilising this package, developers can build algorithms which are robust to a diverse range of scenearios and sensors, ensuring that they are future-proof, safe and non-discriminatory. The objectives were:
+The aim of this benchmark was to create a ground segmentation evaluation tool which reflects the desires of the industry and its stakeholders. Utilising this package, developers can build algorithms which are robust to a diverse range of scenearios and sensors, ensuring that they are future-proof, safe and non-discriminatory. The objectives were:
 
 ### Evaluation 
-* To evalaute ground segmentation algorithms against scenarios and metrics reflective of industry needs.
+* To evaluate ground segmentation algorithms against scenarios and metrics reflective of industry needs.
 * To generate a performance score for urban and rural scenarios and sensor type and position, as well as provide an overall score.
 * To create a leaderboard to compare algorithm results against.
 
 ### User Experience
-* To provide an intutive algorith integration experience with clear instructions.
-* To crete an inclusive enviornment for users with different needs.
+* To provide an intuitive algorithm integration experience with clear instructions.
+* To create an inclusive environment for users with different needs.
 * To create a visually pleasing user interface, which is easy to navigate and understand.
 
 ## What's Inside
-The benchmark consists of serveral datasets and evaluates four pertinent ground segmentation algorithms. This is what you can find inside!
+The benchmark consists of several datasets and evaluates four pertinent ground segmentation algorithms. This is what you can find inside!
 ### Folder Structure
 <p align="left"><img src=images/folder-structure.svg alt="Folder Structure" width="800px" /></p>
 
 ### Datasets
 *  [SemanticKITTI](https://www.semantic-kitti.org/) - Represents Urban Scenarios.
 *  [RELLIS-3D](https://github.com/unmannedlab/RELLIS-3D?tab=readme-ov-file) - Represents Rural Scenarios.
-*  [LiDAR-CS](https://github.com/LiDAR-Perception/LiDAR-CS) - Provides a Veriety of Sensor Height and Type.
+* [LiDAR-CS](https://github.com/LiDAR-Perception/LiDAR-CS) - Provides a variety of Sensor Heights and Types.
 
 ### Algorithms Evaluated
 *  [GndNet](https://github.com/anshulpaigwar/GndNet) - Machine Learning-Based Algorithm
@@ -66,7 +66,7 @@ pip install numpy pandas openpyxl psutil gputil open3d
 **NOTE:** If you wish to run any of the example scripts, please follow the links provided in the **Algorithms Evaluated** section and follow their setup instructions.
 ## How to Run
 ### Test Environment
-The code wass tested successfully on:
+The code was tested successfully on:
 * Ubuntu 20.04
 * Open3D 0.18.0
 * Python 3.8.10
@@ -84,17 +84,17 @@ cd /path/to/your/LiDAR-CS
 python3 evaluate_template.py
 ```
 ## Evaluation
-The ground segmentation evaluation can be view through two mediums, visually or numerically. For instances where the algorithm performance falls below the adjustable IoU threshold of 70%, users can visualise the pointcloud as demonstrated below. This allows developers to identify areas for improvement in their algorithm approach, highlighting points of over and under segmentation.
+The ground segmentation evaluation can be viewed through two mediums: visually or numerically. For instances where the algorithm performance falls below the adjustable IoU threshold of 70%, users can visualise the pointcloud as demonstrated below. This allows developers to identify areas for improvement in their algorithm approach, highlighting points of over and under-segmentation.
 
 ### Visualise
-The terminal output and visualised point cloud of the LineFit algorithm can be seen below. The colours provide a clear contrast in under and over segmented areas, as well as highlighting where the algorithm succesfully identified the ground plane. 
+The terminal output and visualised point cloud of the LineFit algorithm can be seen below. The colours provide a clear contrast in under and over-segmented areas, as well as highlighting where the algorithm successfully identified the ground plane. 
 <br />   
 <p align="center"><img src=images/linefit-visualised.png alt="Visualise" width="950px" /></p>
 
 ### Analyse
-Alternatively users can analyse the algorithmic performance numerically through the "results.xlsx" file. This file gathers results for 13 individual attributes against 8 perforamnce metrics. Each attribute is made up of 10 samples of 32 sequntial scans (with exception to the sensor data which is 10 samples of 1 scan due to requiring further labelling.) The attributes and metrics assessed can be seen below:
+Alternatively users can analyse the algorithmic performance numerically through the "results.xlsx" file. This file gathers results for 13 individual attributes against 8 performance metrics. Each attribute is made up of 10 samples of 32 sequential scans (with the exception of the sensor data, which is 10 samples of 1 scan due to requiring further labelling.) The attributes and metrics assessed can be seen below:
 #### Attributes
-Prior to sampling, the distribution of each attribute scans across the three datasets were:
+Prior to sampling, the distribution of each attribute scans across the three datasets was:
 <br />   
 <p align="left"><img src=images/attribute-population.png alt="Visualise" width="800px" /></p>
 
@@ -109,11 +109,11 @@ Prior to sampling, the distribution of each attribute scans across the three dat
 *  Speed                          [Hz]
 
 ## User Experience
-User experience was a top priority when creating the benchmark. This included making sure the product was inclusive and adaptable to peoples needs, that all instructions were clear, simple and instuitive, and that the outputs were aethetically pleasing. To adress the user experience, the following features were added to improve usability:
+User experience was a top priority when creating the benchmark. This included making sure the product was inclusive and adaptable to people's needs, that all instructions were clear, simple and intuitive, and that the outputs were aesthetically pleasing. To address the user experience, the following features were added to improve usability:
 *  +/- to adjust the datapoint size.
 *  n/b to quickly navigate the scans.
 *  Loading bar and tasks complete indicator.
-*  Optimally positioned camera to view the pointcloud segmentation.
+*  Optimally positioned camera to view the point cloud segmentation.
 *  Option to add additional datasets without altering the evaluation script.
 
 The final feature added to the benchmark was the option to alter the colour palette of the visualise code to the IBM Design library colour blind palette (left), greyscale palette (right) or the option to customise the palette to your needs. The output of these alternative colours can be seen below:
