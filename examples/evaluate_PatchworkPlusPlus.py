@@ -287,7 +287,7 @@ try:
     if low_accuracy_folders:
         print('\nThe low accuracy attributes were:')
         for entry in low_accuracy_folders:
-            print(f"Attribute: {entry['Attribute']}, Group: {entry['Group']}, IoU: {entry['IoU']:.2f}")
+            print(f"Attribute: {entry['Attribute']}, Group: {entry['Group']}, IoU: {entry['IoU']*100:.2f}%")
         
         print('\nWould you like to view the low accuracy attribute scenarios?')
         print('\nPress...')

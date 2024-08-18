@@ -126,7 +126,7 @@ def visualise_low_accuracy_scenarios(low_accuracy_folders):
         print(f"\rVisualising Attribute: {attribute}, Group: {group}, IoU: {IoU*100:.2f}%", end='', flush=True)
         print('\n' + '-' * 100)
 
-        pcd_o3d = assign_colours(directory, ground_truth, ground_estimate, greyscale_colour_palette)
+        pcd_o3d = assign_colours(directory, ground_truth, ground_estimate, greyscale_colour_palette)  # Adjust colour palette here <------------
         visualise_scenario(vis, pcd_o3d)
 
     def next_scan(vis):
